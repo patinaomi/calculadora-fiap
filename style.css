@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 48px;
+}
+
+.azul {
+    background-color: blue;
+}
+
+.vermelho {
+    background-color: red;
+}
+
+.amarelo {
+    background-color: yellow;
+}
+
+.verde {
+    background-color: green;
+}
