@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+:root {
+    --cor-pink-fiap: #e91c5d;
+}
+
+.cabecalho {
+    height: 60px;
+    width: 100%;
+    background-color: var(--cor-pink-fiap);
+    font-size: 1em;
+    color: white;
+}
