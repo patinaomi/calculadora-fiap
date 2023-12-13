@@ -4,17 +4,70 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+}
 
+/* será que consigo colocar tudo num font-face só? */
+
+@font-face {
+    font-family: GothamBold;
+    src: url(/assets/fonts/Gotham\ Bold.otf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: GothamMedium;
+    src: url(/assets/fonts/Gotham\ Medium.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: GothamBook;
+    src: url(/assets/fonts/Gotham\ Book.otf);
+    font-weight: normal;
 }
 
 :root {
     --cor-pink-fiap: #e91c5d;
+    --cor-pink-hover: #ba1649;
+    --cor-texto-branco: #ffffff;
+    --fonte-titulo: GothamBold;
+    --fonte-subtitulo: GothamMedium;
+    --fonte-texto: GothamBook;
 }
 
 .cabecalho {
-    height: 60px;
+    height: 80px;
     width: 100%;
     background-color: var(--cor-pink-fiap);
-    font-size: 1em;
-    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.menu__cabecalho{
+    display: flex;
+    width: 60%;
+    margin-left: 40px;
+    
+}
+
+.link__cabecalho {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: GothamBook;
+    transition: background-color 0.6s;
+    padding: 30px;
+    height: 80px;
+}
+
+/* fiz assim porque antes estava ficando azul, mesmo com a propriedade text decxoration none */
+.link__cabecalho a {
+    color: var(--cor-texto-branco);
+    cursor: pointer;
+}
+
+.link__cabecalho:hover {
+    background-color: var(--cor-pink-hover);
 }
