@@ -6,8 +6,6 @@
     text-decoration: none;
 }
 
-/* será que consigo colocar tudo num font-face só? */
-
 @font-face {
     font-family: GothamBold;
     src: url(/assets/fonts/Gotham\ Bold.otf);
@@ -29,12 +27,17 @@
 :root {
     --cor-pink-fiap: #e91c5d;
     --cor-pink-hover: #ba1649;
+    --cor-pink-claro: #ee4a7e;
+    --cor-fundo-cinza: #f2f2f2;
     --cor-texto-branco: #ffffff;
+    --cor--texto-preto: #080808;
+    --cor-texto-cinza: #777777;
     --fonte-titulo: GothamBold;
     --fonte-subtitulo: GothamMedium;
     --fonte-texto: GothamBook;
 }
 
+/* CABEÇALHO */
 .cabecalho {
     height: 80px;
     width: 100%;
@@ -43,17 +46,15 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    
 }
 
-.menu__cabecalho{
+.cabecalho__lista {
     display: flex;
     width: 60%;
     margin-left: 40px;
-    
 }
 
-.link__cabecalho {
+.cabecalho__link {
     font-size: 16px;
     font-weight: 400;
     font-family: GothamBook;
@@ -62,12 +63,112 @@
     height: 80px;
 }
 
-/* fiz assim porque antes estava ficando azul, mesmo com a propriedade text decxoration none */
-.link__cabecalho a {
+.cabecalho__link a {
     color: var(--cor-texto-branco);
     cursor: pointer;
 }
 
-.link__cabecalho:hover {
+.cabecalho__link:hover {
     background-color: var(--cor-pink-hover);
+}
+
+/* CONTAINER CALCULAR MEDIAS */
+.calculadora__medias {
+    margin: 4%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+}
+
+.titulo {
+    font-size: 28px;
+    font-family: var(--fonte-subtitulo);
+    letter-spacing: 1px;
+    color: var(--cor--texto-preto);
+    margin: 4% 0 0 4%;
+}
+
+.container__avaliacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    width: 45%;
+    height: 560px;
+    background-color: var(--cor-fundo-cinza);
+}
+
+.subtitulo__semestre {
+    font-size: 21px;
+    font-family: var(--fonte-titulo);
+    color: var(--cor-texto-branco);
+    letter-spacing: 1px;
+    background-color: var(--cor-pink-fiap);
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avaliacoes {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+}
+
+.titulo__avaliacoes {
+    width: 100%;
+    font-size: 18px;
+    background-color: var(--cor-pink-claro);
+    color: var(--cor-texto-branco);
+    font-family: var(--fonte-texto);
+    padding: 10px;
+    text-align: center;
+}
+
+label,
+input {
+    font-size: 18px;
+    font-family: var(--fonte-texto);
+}
+
+input {
+    text-align: center;
+    width: 90px;
+    margin-right: 20px;
+}
+
+.botao-media {
+    margin: 20px auto;
+    width: 80%;
+    height: 50px;
+    background-color: var(--cor-pink-fiap);
+    font-size: 21px;
+    font-family: var(--fonte-titulo);
+    color: var(--cor-texto-branco);
+    border: 0;
+    cursor: pointer;
+    display: block;
+}
+
+.botao-media:hover {
+    transition: 0.6s;
+    background-color: var(--cor-texto-branco);
+    color: var(--cor-pink-fiap);
+}
+
+.rodape {
+    height: 120px;
+    background-color: var(--cor-fundo-cinza);
+    margin-top: 20px;
+}
+
+.titulo__rodape {
+    font-size: 18px;
+    font-family: var(--fonte-texto);
+    color: var(--cor-texto-preto);
+    padding: 20px;
+    text-align: center;
 }
