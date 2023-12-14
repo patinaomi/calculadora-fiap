@@ -54,8 +54,8 @@
                     </label>
                 </div>
                 <div class="resultado-media">
-                    <input class="botao-media" type="button" value="CALCULAR MÉDIA SEMESTRAL">
-                    <p class="nota-media" id="resultado"></p>
+                    <input class="botao-media" type="button" onclick="calcularMediaSemestral()" value="CALCULAR MÉDIA SEMESTRAL">
+                    <p class="nota-media" id="resultado-1"></p>
                 </div>
             </div>
             <!-- Fim do 1º Semestre -->
@@ -66,7 +66,7 @@
                 <h4 class="titulo__avaliacoes">CHECKPOINT</h4>
                 <div class="avaliacoes">
                     <label for="cp1-2">CP1:
-                        <input type="number" name="cp1-2" id="cp1-2" min="0" max="10" value="0">
+                        <input type="number" name="cp1-2" id="cp1-2" min="0" max="10" placeholder="0 a 10">
                     </label>
                     <label for="cp2-2">CP2:
                         <input type="number" name="cp2-2" id="cp2-2" min="0" max="10" value="0">
@@ -93,13 +93,17 @@
                 </div>
                 <div class="resultado-media">
                     <input class="botao-media" type="button" value="CALCULAR MÉDIA SEMESTRAL">
-                    <p class="nota-media" id="resultado"></p>
+                    <p class="nota-media" id="resultado-2"></p>
                 </div>
             </div>
             <!-- Fim do 2º Semestre -->
 
         </section>
 
+    </section>
+
+    <section class="media__anual">
+        <p class="resultado-anual" id="resultado-3"></p>
     </section>
 
     <footer class="rodape">

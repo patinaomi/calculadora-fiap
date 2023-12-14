@@ -93,7 +93,7 @@
     flex-direction: column;
     gap: 3px;
     width: 45%;
-    height: 560px;
+    height: 600px;
     background-color: var(--cor-fundo-cinza);
 }
 
@@ -141,7 +141,7 @@ input {
 }
 
 .botao-media {
-    margin: 20px auto;
+    margin: 0 auto;
     width: 80%;
     height: 50px;
     background-color: var(--cor-pink-fiap);
@@ -157,6 +157,14 @@ input {
     transition: 0.6s;
     background-color: var(--cor-texto-branco);
     color: var(--cor-pink-fiap);
+}
+
+.nota-media {
+    font-size: 50px;
+    font-family: var(--fonte-texto);
+    color: var(--cor--texto-preto);
+    text-align: center;
+    margin: 30px auto;
 }
 
 .rodape {
