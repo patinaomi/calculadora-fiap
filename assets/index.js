@@ -1,5 +1,27 @@
 let notaFinal;
 
+function configurarCamposDeNota() {
+  const campos = ['cp1-1', 'cp2-1', 'cp3-1', 'sp1-1', 'sp2-1', 'gs-1', 'cp1-2', 'cp2-2', 'cp3-2', 'sp1-2', 'sp2-2', 'gs-2'];
+  campos.forEach(id => {
+      const campo = document.getElementById(id);
+      if (campo) {
+          campo.onfocus = function() {
+              if (this.value === '0') {
+                  this.value = '';
+              }
+          };
+          campo.onblur = function() {
+              if (this.value === '') {
+                  this.value = '0';
+              }
+          };
+      }
+  });
+}
+
+window.onload = configurarCamposDeNota;
+
+
 function validaNota(nota, maximo, elemento) {
     if (nota < 0 || nota > maximo) {
         alert(`Valor Inválido! As notas devem estar entre 0 e ${maximo}.`);
