@@ -8,19 +8,19 @@
 
 @font-face {
     font-family: GothamBold;
-    src: url(/assets/fonts/Gotham\ Bold.otf);
+    src: url("../fonts/Gotham\ Bold.otf");
     font-weight: bold;
 }
 
 @font-face {
     font-family: GothamMedium;
-    src: url(/assets/fonts/Gotham\ Medium.otf);
+    src: url("../fonts/Gotham\ Medium.otf");
     font-weight: normal;
 }
 
 @font-face {
     font-family: GothamBook;
-    src: url(/assets/fonts/Gotham\ Book.otf);
+    src: url("../fonts/Gotham\ Book.otf");
     font-weight: normal;
 }
 
@@ -37,7 +37,6 @@
     --fonte-texto: GothamBook;
 }
 
-/* CABEÇALHO */
 .cabecalho {
     height: 80px;
     width: 100%;

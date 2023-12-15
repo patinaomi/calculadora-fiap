@@ -4,6 +4,7 @@ function configurarCamposDeNota() {
         'cp1-2', 'cp2-2', 'cp3-2', 'sp1-2', 'sp2-2', 'gs-2'
     ];
     campos.forEach(id => {
+        //sem essa parte antes ficava NaN
         const campo = document.getElementById(id);
         campo.onfocus = () => { if (campo.value === '0') campo.value = ''; };
         campo.onblur = () => { if (campo.value === '') campo.value = '0'; };
